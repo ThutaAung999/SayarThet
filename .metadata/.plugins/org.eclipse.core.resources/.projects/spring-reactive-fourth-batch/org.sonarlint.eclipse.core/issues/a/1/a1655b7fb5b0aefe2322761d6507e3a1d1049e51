@@ -1,0 +1,45 @@
+
+|	java:S1175"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ëıÜÁHÅRMINORZ
+CODE_SMELL
+y	java:S1005"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ëıÜÁHÆRMINORZ
+CODE_SMELL
+V
+java:S1128"*Remove this unused import 'lombok.Setter'.(ó¸çµHÇRMINORZ
+CODE_SMELL
+V
+java:S1128"*Remove this unused import 'lombok.Getter'.(ùÒµÙHÉRMINORZ
+CODE_SMELL
+r
+java:S1128
+"ARemove this unused import 'com.reactiveexample.demo.model.Actor'.(¤¢¿ËşÿÿÿÿHËRMINORZ
+CODE_SMELL
+y	java:S100D"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(£ñ©®HÍRMINORZ
+CODE_SMELL
+€	java:S116%"URename this field "updated_at" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ğüıHÎRMINORZ
+CODE_SMELL
+~	java:S1000"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÎÙåÿÿÿÿÿHÏRMINORZ
+CODE_SMELL
+	java:S1170"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÎÙåÿÿÿÿÿHĞRMINORZ
+CODE_SMELL
+~	java:S100?"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(®£˜ÙøÿÿÿÿHÑRMINORZ
+CODE_SMELL
+Y
+java:S1128"(Remove this unused import 'lombok.Data'.(÷í«ÿÿÿÿÿHÒRMINORZ
+CODE_SMELL
+W
+java:S1128"+Remove this unused import 'lombok.Builder'.(§’ĞßHÔRMINORZ
+CODE_SMELL
+…	java:S116""URename this field "created_at" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(±“¡ıüÿÿÿÿHÖRMINORZ
+CODE_SMELL
+t
+java:S1128"CRemove this unused import 'org.springframework.data.annotation.Id'.(áŠ¿¸ıÿÿÿÿH×RMINORZ
+CODE_SMELL
+y
+java:S1128"ARemove this unused import 'javax.validation.constraints.NotNull'.(áç¥ãüÿÿÿÿ8é½®¬ë0HÙRMINORZ
+CODE_SMELL
+\
+java:S1128"+Remove this unused import 'java.util.List'.(Õë±ÄøÿÿÿÿHÛRMINORZ
+CODE_SMELL
+x
+java:S1128"GRemove this unused import 'com.reactiveexample.demo.model.MovieDetail'.(‘ƒ«ˆÿÿÿÿÿHİRMINORZ
+CODE_SMELL
