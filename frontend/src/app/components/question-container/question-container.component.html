@@ -1,0 +1,17 @@
+<div class="parent">
+  <app-question-box [value]="currentQuestion"
+                (addItemEvent)="addItem($event)"
+                (updateItemEvent)="updateItem($event)"
+
+  >
+  </app-question-box>
+  <div *ngIf="questions.length==0">No Items</div>
+
+
+  <app-question-item-v2 *ngFor="let question of questions, index as i"
+                     [question]="question"
+                        [index]="i"
+                        (newQuestionEvent)="questionClicked($event)"
+    >
+  </app-question-item-v2>
+</div>

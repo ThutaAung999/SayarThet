@@ -1,0 +1,24 @@
+<div>
+  <p style="text-decoration: underline;text-underline-offset: 10px;">	From child <span style="font-style: italic;font-weight: bold">	Profile</span> component :</p>
+  <br/> <br/>
+  <app-profile  *ngFor="let name of names"
+                [name]="name"
+                (nameClickEvent)="childNameClick($event)"
+    ></app-profile>
+
+  <br/>
+  <p style="text-decoration: underline;
+		text-underline-offset: 10px;">From Parent component:</p>
+  <br/><br/>
+
+  Current Name  : <span style="font-style: italic;font-weight: bold;">	{{currentName}}</span>
+  <br/><br/>
+
+  <br/>
+  <br/>
+
+  Parent :
+  {{data}}
+  <button type="button" (click)="onClick()">Increment</button>
+  <app-child [data]="data" ></app-child>
+</div>

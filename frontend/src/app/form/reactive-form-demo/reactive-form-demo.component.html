@@ -1,0 +1,21 @@
+<div>
+  Movie Form:
+
+  <div class="mb-3">
+    <label for="movieName" class="form-label">Movie Name: </label>
+    <input type="text" class="form-control" id="movieName"
+           [formControl]="name">
+  </div>
+
+  <div class="mb-3">
+    <label for="year" class="form-label">Year : </label>
+    <input type="text" class="form-control" id="year"
+           [formControl]="year">
+
+  </div>
+
+  <div class="mb-3">
+    <button type="button" class="btn btn-primary">
+      Submit</button>
+  </div>
+</div>
