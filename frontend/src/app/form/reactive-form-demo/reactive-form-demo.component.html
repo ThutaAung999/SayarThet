@@ -1,21 +1,69 @@
-<div>
-  Movie Form:
+<form [formGroup]="movieForm" (ngSubmit)="formSubmit()">
+  <div class="container row">
+    Movie Form:
 
-  <div class="mb-3">
-    <label for="movieName" class="form-label">Movie Name: </label>
-    <input type="text" class="form-control" id="movieName"
-           [formControl]="name">
+    <div class="mb-3">
+      <label for="movieName" class="form-label">Movie Name: </label>
+      <input type="text" class="form-control" id="movieName"
+             formControlName="name">
+
+
+    <div class="alert alert-danger"
+         role="alert"
+         *ngIf="movieForm.controls.name.touched &&
+         movieForm.controls.name.errors?.['required']">
+      Name required
+    </div>
+    <div class="alert alert-danger"
+           role="alert"
+        *ngIf="movieForm.controls.name.touched &&
+      movieForm.controls.name.errors?.['minlength']">
+    Name must be at least 4 characters long.
+    </div>
+
+    </div>
+
+    <div class="mb-3">
+      <label for="year" class="form-label">Year : </label>
+      <input type="text" id="year" class="form-control"
+             (keypress)="keyPress($event)"
+             formControlName="year"> <!--bind  input with TypeScript property-->
+
+      <div class="alert alert-danger" role="alert"
+           *ngIf="movieForm.controls.year.touched &&
+        movieForm.controls.year.errors?.['required']">
+        Year required
+      </div>
+
+      <div class="alert alert-danger" role="alert"
+           *ngIf="movieForm.controls.year.touched &&
+        movieForm.controls.year.errors?.['pattern']">
+        Only number are allowed.
+      </div>
+    </div>
+
+
+    <div class="mb-3">
+      <label for="director" class="form-label">Director : </label>
+      <input type="text" id="director" class="form-control"
+             formControlName="director"> <!--bind  input with TypeScript property-->
+      <div class="alert alert-danger" role="alert"
+           *ngIf="movieForm.controls.director.touched &&
+        movieForm.controls.director.errors?.['required']">
+        Director required
+      </div>
+    </div>
+
+
+    <div class="mb-3">
+      <button type="submit" class="btn btn-primary"
+              style="margin-right:10px;"
+              [disabled]="!movieForm.valid">
+        Submit
+      </button>
+      <button type="button" class="btn btn-primary"
+              (click)="updateName()">Update Name</button>
+    </div>
+
   </div>
-
-  <div class="mb-3">
-    <label for="year" class="form-label">Year : </label>
-    <input type="text" class="form-control" id="year"
-           [formControl]="year">
-
-  </div>
-
-  <div class="mb-3">
-    <button type="button" class="btn btn-primary">
-      Submit</button>
-  </div>
-</div>
+</form>
