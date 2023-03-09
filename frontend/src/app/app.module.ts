@@ -16,6 +16,7 @@ import { PipeDemoComponent } from './pipe/pipe-demo/pipe-demo.component';
 import { HighlightDirective } from './attributedirective/highlight.directive';
 import {ReactiveFormsModule} from "@angular/forms";
 import { ReactiveFormDemoComponent } from './form/reactive-form-demo/reactive-form-demo.component';
+import {ModalModule} from "ngx-bootstrap/modal";
 
 @NgModule({
   declarations: [
@@ -36,7 +37,8 @@ import { ReactiveFormDemoComponent } from './form/reactive-form-demo/reactive-fo
   imports: [
     BrowserModule,
     AppRoutingModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    ModalModule.forRoot()
   ],
   providers: [],
   bootstrap: [AppComponent]
